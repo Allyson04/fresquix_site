@@ -8,4 +8,11 @@ header{
     background-color:  #0474fc; /*   https://imgur.com/f1HxqRc */
     height: 100vh;
     width: 100hw;
+    display: flex;
+}
+
+svg{
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
 }
