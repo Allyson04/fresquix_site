@@ -11,19 +11,21 @@ header{
     display: flex;
 }
 
+/* Estilos e animações da logo principal */
+
 svg{
     margin: auto auto;
     align-items: center;
     justify-content: center;
     stroke-dasharray: 802;
     stroke-dashoffset: 0;
-    animation: logo_draw 2s /*3s*/ linear 0s normal;
+    animation: logo_draw 10s /*3s*/ linear 0s infinite normal;
 }
 
 
 path#selecao{
     fill: transparent;
-    animation: logo_color_change 1s linear 2s 1 normal;
+    animation: logo_color_change 10s linear 0s infinite normal;
     animation-fill-mode: forwards;
 }
 
@@ -33,9 +35,14 @@ path#selecao{
         stroke-dashoffset: 802;
     }
 
+    20% {
+        stroke-dashoffset: 0;
+    }
+
     100% {
         stroke-dashoffset: 0;
     }
+
 }
 
 @keyframes logo_color_change{
@@ -44,7 +51,16 @@ path#selecao{
         fill: transparent;
     }
 
-    100% {
-        fill:white;
+    20% {
+        fill:transparent;
     }
+
+    30% {
+        fill: white;
+    }
+
+    100% {
+        fill: white;
+    }
+
 }
