@@ -11,6 +11,8 @@ header{
     display: flex;
 }
 
+/* Estilos e animações da logo principal */
+
 svg{
     margin: auto auto;
     align-items: center;
