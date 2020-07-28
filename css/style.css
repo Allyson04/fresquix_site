@@ -11,6 +11,25 @@ header{
     display: flex;
 }
 
+footer{
+  background: lightblue;
+  display: inline-block;
+  width: 100vw;
+  position: fixed;
+  height: 10vh;
+  bottom: 0px;
+  text-align: center;
+}
+
+.credits img{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    padding: 5px;
+    margin: 0;
+}
+
+
 /* Estilos e animações da logo principal */
 
 svg{
