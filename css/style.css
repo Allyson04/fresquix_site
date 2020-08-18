@@ -97,7 +97,7 @@ article.comments_fresquix path:hover{
 
 /* button twitch */
 
-div.section-twitch{
+div.section-contact{
     width: 100vw;
     height: 100vh;
     background: url(/img/fresquix-text-blue.svg) repeat-x;
@@ -106,7 +106,7 @@ div.section-twitch{
     
 }
 
-div.section-twitch .button-twitch{
+div.section-contact .block-twitch-painel {
     box-sizing: content-box;
 
     background-color: var(--theme-color-blue);
@@ -121,7 +121,7 @@ div.section-twitch .button-twitch{
     border-radius: 1px;
 }
 
-div.section-twitch .button-twitch span{
+div.section-contact .block-twitch-painel span{
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 2px;
     display: flex;
@@ -129,4 +129,38 @@ div.section-twitch .button-twitch span{
     justify-content: center;
     font-size: 3.3vh;
     /* font-weight: 600; */
+}
+
+div.section-contact .section-twitch{
+    width: 100vw;
+    height: 50vh;
+    background:gray;
+}
+
+div.section-contact .twitch{
+    /* box-sizing: content-box; */
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 12vh 25vw;
+
+    height: 26vh;
+    width: 50vw;
+    border: 1px solid red;
+}
+
+div.section-contact .logo{
+    margin-left: -67%;
+    height: 26vh;
+    width: 26vh; 
+    background: var(--theme-color-blue);
+    border-radius: 50%;
+}
+
+div.section-contact .logo img{ 
+    height: 26vh;
+    width: 26vh;
 }
