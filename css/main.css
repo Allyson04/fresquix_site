@@ -1,13 +1,13 @@
 /* Estilos gerais como tamanho e cor das seções */
 :root {
     --theme-color-blue: #0474fc;
-    --fresquix-text: 
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header,
