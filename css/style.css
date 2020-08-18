@@ -106,54 +106,54 @@ div.section-contact{
     
 }
 
-div.section-contact .block-twitch-painel {
+div.section-contact .blue-block {
     box-sizing: content-box;
 
     background-color: var(--theme-color-blue);
-    color: white;
 
     /* height: 8vh; */
     width: 10vw;
     
     margin: 3vh auto;
-    padding: 0.2vw 0.2vw;
+    padding: 0.4vw 0.4vw;
 
     border-radius: 1px;
 }
 
-div.section-contact .block-twitch-painel span{
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 2px;
+div.section-contact span.text-contact{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.3vh;
+
+    font-size: 4vh;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 2px;
     /* font-weight: 600; */
 }
 
 div.section-contact .section-twitch{
     width: 100vw;
     height: 50vh;
-    background:gray;
-}
+    background: gray;
 
-div.section-contact .twitch{
-    /* box-sizing: content-box; */
-
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+div.section-contact .twitch{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
     margin: 12vh 25vw;
 
     height: 26vh;
     width: 50vw;
-    border: 1px solid red;
 }
 
 div.section-contact .logo{
-    margin-left: -67%;
     height: 26vh;
     width: 26vh; 
     background: var(--theme-color-blue);
@@ -163,4 +163,25 @@ div.section-contact .logo{
 div.section-contact .logo img{ 
     height: 26vh;
     width: 26vh;
+}
+
+div.section-contact .twitch-contact{
+    height: 6.5vh;
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+}
+
+
+div.section-contact .twitch-contact img{
+    width: 6.5vh;
+    height: 6.5vh;
+}
+
+div.section-contact div.twitch-contact span.text-contact{
+    text-decoration: none;
+    font-size: 6.5vh;
 }
