@@ -7,53 +7,6 @@ header{
 
 header svg{
     margin: auto auto;
-    align-items: center;
-    justify-content: center;
-    stroke-dasharray: 802;
-    stroke-dashoffset: 0;
-    animation: logo_draw 10s /*3s*/ linear 0s infinite normal;
-}
-
-path#logo{
-    fill: transparent;
-    animation: logo_color_change 10s linear 0s infinite normal;
-    animation-fill-mode: forwards;
-}
-
-@keyframes logo_draw {
-    0% {
-        /* inicio do desenho da logo */
-        stroke-dashoffset: 802;
-    }
-
-    20% {
-        stroke-dashoffset: 0;
-    }
-
-    100% {
-        stroke-dashoffset: 0;
-    }
-
-}
-
-@keyframes logo_color_change{
-
-    0% {
-        fill: transparent;
-    }
-
-    20% {
-        fill:transparent;
-    }
-
-    30% {
-        fill: white;
-    }
-
-    100% {
-        fill: white;
-    }
-
 }
 
 /* Sobre a Fresquix */
@@ -80,8 +33,8 @@ article p.sobre{
 /* Comentários sobre a Fresquix */
 /* colocar para comentários aparecem mediante a altura da tela ou então ao hover da tela */
 
-article.comments_fresquix{
-    background: url(../img/logomark.svg);
+article.comments_fresquix{ 
+    background: url(../img/logomark-background.png);
 }
 
 article.comments_fresquix path:hover{
@@ -98,12 +51,9 @@ article.comments_fresquix path:hover{
     display: none;
 }
 
-
 /* Contacts */
 
 div.section-contact{
-    width: 100%;
-    height: 100vh;
     background: url(../img/contact-panel-background.png) center center no-repeat;
 /* background-repeat: ; */
     
@@ -124,10 +74,6 @@ div.section-contact .blue-block {
 }
 
 div.section-contact span.text-contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-size: 4vh;
     color: white;
     font-family: 'Fira Sans', sans-serif;
@@ -142,11 +88,6 @@ div.section-contact .section-twitch{
     background-size: 100%;
     background-position: top left;
     background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
 div.section-contact .twitch{
@@ -177,9 +118,6 @@ div.section-contact .logo img{
 div.section-contact .twitch-contact{
     height: 6.5vh;
     width: 60%;
-
-    display: flex;
-    align-items: center;
 
     margin: auto 0 auto auto;
 }
@@ -217,10 +155,6 @@ div.section-contact div.twitch-contact span.text-contact{
     -moz-border-radius: 1px;
     -ms-border-radius: 1px;
     -o-border-radius: 1px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .other-contact .grid-panel .text-contact {
@@ -268,9 +202,6 @@ div.section-contact div.twitch-contact span.text-contact{
     background: url("../img/singed-hextech-filtered.jpg") no-repeat;
     background-position: center 30%;
     background-size: 100%;
-
-    display: flex;
-    align-items: center;
 }
 
 .thanks-panel .thanks {

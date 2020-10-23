@@ -1,0 +1,51 @@
+/* animations */
+
+header svg{
+    stroke-dasharray: 802;
+    stroke-dashoffset: 0;
+    animation: logo_draw 10s /*3s*/ linear 0s infinite normal;
+}
+
+
+path#logo{
+    fill: transparent;
+    animation: logo_color_change 10s linear 0s infinite normal;
+    animation-fill-mode: forwards;
+    -webkit-animation: logo_color_change 10s linear 0s infinite normal;
+}
+
+@keyframes logo_draw {
+    0% {
+        /* inicio do desenho da logo */
+        stroke-dashoffset: 802;
+    }
+
+    20% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+@keyframes logo_color_change{
+
+    0% {
+        fill: transparent;
+    }
+
+    20% {
+        fill:transparent;
+    }
+
+    30% {
+        fill: white;
+    }
+
+    100% {
+        fill: white;
+    }
+
+}
