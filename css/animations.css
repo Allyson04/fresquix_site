@@ -1,9 +1,10 @@
-/* animations */
+/* animations of header*/
 
 header svg{
     stroke-dasharray: 802;
     stroke-dashoffset: 0;
     animation: logo_draw 10s /*3s*/ linear 0s infinite normal;
+    -webkit-animation: logo_draw 10s /*3s*/ linear 0s infinite normal;
 }
 
 
@@ -48,4 +49,21 @@ path#logo{
         fill: white;
     }
 
+}
+
+/* sobre da fresquix */
+
+article.sobre_fresquix  p{
+    animation-duration: 1s;
+    animation-name: text-show;
+}
+
+@keyframes text-show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
