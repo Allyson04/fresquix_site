@@ -260,3 +260,21 @@ div.section-contact div.twitch-contact span.text-contact{
 .fresquixMoreTwitch svg path {
     fill: var(--theme-color-blue);
 }
+
+/* Agradecimentos */
+
+.thanks-panel {
+    height: 60vh;
+    background: url("../img/singed-hextech-filtered.jpg") no-repeat;
+    background-position: center 30%;
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.thanks-panel .thanks {
+    width: 330px;
+    height: 310px;
+    margin: calc(60vh - 310px) auto 0;
+}
