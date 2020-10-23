@@ -196,7 +196,8 @@ div.section-contact div.twitch-contact span.text-contact{
 }
 
 .grid-panel {
-    margin: 0 auto;
+    width: 65vw;
+    margin: 0 auto 20px;
 
     display: flex;
     flex-direction: row;
