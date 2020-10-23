@@ -61,7 +61,7 @@ path#logo{
 article.sobre_fresquix{
     padding: 35vh 10vw;
     color: var(--theme-color-blue);
-    background-image: url(https://i.imgur.com/g45hfSa.png), url(../img/fundo-fresquix.png);
+    background-image: url(https://i.imgur.com/g45hfSa.png), url(../img/static-background.png);
     background-repeat: repeat-y, repeat-x;
     background-size: cover;
 }
@@ -81,7 +81,7 @@ article p.sobre{
 /* colocar para comentários aparecem mediante a altura da tela ou então ao hover da tela */
 
 article.comments_fresquix{
-    background: url(../img/fresquix_comments.svg);
+    background: url(../img/logomark.svg);
 }
 
 article.comments_fresquix path:hover{
@@ -104,7 +104,7 @@ article.comments_fresquix path:hover{
 div.section-contact{
     width: 100%;
     height: 100vh;
-    background: url(../img/fresquixs.png) center center no-repeat;
+    background: url(../img/contact-panel-background.png) center center no-repeat;
 /* background-repeat: ; */
     
     
@@ -204,7 +204,7 @@ div.section-contact div.twitch-contact span.text-contact{
 }
 
 .other-contact .grid-panel .blue-block {
-    background:  linear-gradient(to right, rgb(36, 92, 252),  rgb(36, 36, 44) ), url("../img/fundo-panels.png");
+    background:  linear-gradient(to right, rgb(36, 92, 252),  rgb(36, 36, 44) ), url("../img/contact-buttons.png");
     background-position: center;
     background-size: 100%;
     
