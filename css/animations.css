@@ -54,16 +54,172 @@ path#logo{
 /* sobre da fresquix */
 
 article.sobre_fresquix  p{
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-name: text-show;
 }
 
 @keyframes text-show {
-    from {
-        opacity: 0;
+    0% {
+        color: transparent;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
     }
 
-    to {
-        opacity: 1;
+    75% {
+        color: transparent;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    100% {
+        color: var(--theme-color-blue);
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+/* logomarca da fresquix */
+
+article.comments_fresquix {
+    animation: show-comments 1s;
+    -webkit-animation: show-comments 1s;
+}
+
+/* 
+article.comments_fresquix:hover {
+    transition: background 1s;
+    background: url(../img/logomark.svg), var(--theme-color-blue);
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+}
+
+@keyframes show-comments {
+    0% {
+        background: url(../img/logomark-background.png);
+    }
+
+    100% {
+        background: url(../img/logomark.svg), var(--theme-color-blue);
+    }
+} */
+
+/* contacts */
+.section-contact > .blue-block, 
+.other-contact > .blue-block {
+    transition: transform 0.3s, background 1s;
+    -webkit-transition: transform 0.3s, background 1s;
+    -moz-transition: transform 0.3s, background 1s;
+    -ms-transition: transform 0.3s, background 1s;
+    -o-transition: transform 0.3s, background 1s;
+    background: var(--theme-color-blue);
+}
+
+.section-contact > .blue-block:hover, 
+.other-contact > .blue-block:hover {
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: linear-gradient( var(--theme-color-blue), rgb(195, 196, 252), var(--theme-color-blue) );
+}
+
+.section-contact .logo,
+.section-contact .logo img {
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+
+
+.section-contact div.logo:hover,
+.section-contact div.logo img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.section-contact .grid-panel .blue-block {
+    animation: balanca 2s infinite;
+    -webkit-animation: balanca 2s infinite;
+}
+
+@keyframes balanca {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+.fresquixMoreTwitch img {
+    animation: heart-beat 1s;
+    -webkit-animation: heart-beat 1s alternate infinite;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+       -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);  
+       -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
     }
 }
